@@ -1,0 +1,163 @@
+body{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.flex_be{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_sta{
+    display: flex;
+    justify-content: start;
+}
+.flex_ar{
+    display: flex;
+    justify-content: space-around;
+}
+.flex_sta_w{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.flex_ar_cl{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+a{
+   text-decoration: none; 
+   color: #000000;
+}
+ul,li{
+    list-style: none;
+    padding: 0px;
+    left: 0px;
+}
+.headernav{
+    width: 70%;
+    margin: auto;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background: #1E1E1E;
+    box-sizing: border-box;
+    padding: 80px 210px;
+    color: #fff;
+    /* position: absolute;
+    bottom: 0px;
+    left: 0px; */
+}
+.ask{
+    display: block;
+    width: 110px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #755AFF;
+    background: #fff;
+    border-radius: 20px;
+}
+.footer_center{
+    width: 30%;
+}
+.footer .footer_center a{
+  color: #fff;
+  margin-right: 36px;
+}
+.footer_right span{
+    font-size: 24px;
+}
+.nav .active a{
+    color: #755AFF;
+}
+.nav a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.nav{
+   
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+
+}
+.nav li{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.logo{
+    display: block;
+    width:136px;
+    height: 48px;
+}
+.topheader{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.centerboxpage{
+     width: 234px;
+     display: block;
+     margin: auto;
+     height: 100px;
+     margin-top: 80px;
+}
+video{
+    /* width: 260px; */
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+.videobg {
+    width: 684px;
+    height: auto;
+    background: #1E1E1E;
+    position: relative;
+}
+.cover{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(25,25,25,0.8); 
+}
+.cover img{
+    width: 50px;
+    height: auto;
+}
+.could{
+    font-size: 14px;
+    color: #000000;
+    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+.right_name{
+    font-size: 14px;
+    color: #000000 ;
+    margin-left: 10px !important
+}
+.could:hover{
+    text-decoration: underline;
+    color: #755AFF;
+}
+.bigdetailimg{
+    padding-top: 30px;
+}

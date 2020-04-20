@@ -1,0 +1,31 @@
+.con_list{
+    width: 100%;
+    margin-top: 60px;
+}
+.con_list li{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+    padding-bottom:30px;
+    margin-bottom: 50px;
+}
+.con_artical{
+    width: 70%;
+    height: auto;
+}
+.com_img{
+    width: 25%;
+    height: auto;
+}
+.com_img img{
+    width: 100%;
+    height: auto;
+}
+.con_artical h4{
+    margin-bottom: 36px;
+    font-weight: bold;
+}
+.con_artical p{
+    line-height: 26px;
+}

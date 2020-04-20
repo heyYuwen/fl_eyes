@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合作案例</title>
+    
+    <link rel="stylesheet" href="video/plyr.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/hz_detail.css">
+    <style>
+    /* .jsmodern-video-s{
+      position: absolute;
+      bottom: 0px;
+      left: 130px;
+      height: 6px;
+      background: rgba(41, 221, 41, 0.25);
+      border-radius: 3px;
+      width: 460px;
+      width: -webkit-calc(100% - 305px);
+      width: -moz-calc(100% - 305px);
+      width: calc(100% - 305px);
+      float: left;
+      margin: 17px 0 0 15px;
+      cursor: pointer;
+      z-index: 500;
+    } */
+    
+    </style>
+</head>
+<body>
+   <!-- 导航栏 -->
+   <div class="topheader">
+      <div class="container flex_be">
+          <!-- 导航 -->
+          <img class="logo" src="image/logo.png" alt="">
+          <ul class="nav flex_sta">
+              <li><a href="index.html">首页</a> </li>
+              <li><a href="star_list.html">明星案例</a></li>
+              <li  class="active"><a href="hz_list.html">合作案例</a></li>
+              <li><a href="consulting.html">相关资讯</a></li>
+              <li><a href="about.html">联系我们</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="bigdetailimg">
+      <div class="flex_sta">
+          <a class="could" href="consulting.html">相关资讯</a>
+          <p>></p>
+          <a class="could right_name" href="">关于流量破亿</a>
+      </div>
+          <div class="swiper-container gallery-top">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide " >
+                      <video preload  controls='controls' controlslist="nodownload">
+                        <source src="image/test.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    
+                    <div class="swiper-slide " >
+                      <video preload  controls='controls' >
+                        <source   type="video/mp4">
+                      </video>
+                    
+                    </div>
+                    <div class="swiper-slide " >
+                      <video preload   controls='controls'>
+                        <source  type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="swiper-slide " >
+                      <video preload  controls='controls'>
+                        <source  type="video/mp4">
+                      </video>
+                    </div>
+                    
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next swiper-button-white"></div>
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                          <img src="image/hezuoanliliebiao.png" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                          <img src="image/hezuoanliliebiao.png" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                          <img src="image/hezuoanliliebiao.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                          <img src="image/hezuoanliliebiao.png" alt="">
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+  </div>
+            
+        
+  
+    <div class="footer flex_ar">
+        <div class="footer_logo">
+            <img src="image/footerlogo.png" alt="">
+        </div>
+       <div class="footer_center flex_sta_w">
+            <a href="">关于我们</a>
+            <a href="">服务流程</a>
+            <a href="">明星案例</a>
+            <a href="">合作案例</a>
+            <a href="">行业资讯</a>
+            <a href="">合作客户</a>
+       </div>
+       <div class="footer_right">
+           <span>400-833-8608</span>
+           <p>邮箱：service@jiabei.com</p>
+           <p>地址：武汉市江汉区海马公园</p>
+           <a href="" class="ask">立即咨询</a>
+       </div>
+    </div>
+    <script src="js/swiper.min.js"> </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="video/plyr.js"></script>
+    <script>
+           
+            var all_video = document.getElementsByTagName('video') 
+            var videoindex=0
+            var galleryThumbs = new Swiper('.gallery-thumbs', {
+              spaceBetween:10,
+              slidesPerView: 'auto',
+              freeMode: true,
+              watchSlidesVisibility: true,
+              watchSlidesProgress: true,
+             
+            });
+            var galleryTop = new Swiper('.gallery-top', {
+              spaceBetween: 10,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              thumbs: {
+                swiper: galleryThumbs
+              },
+              on: {
+                slideChange: function () {
+                    console.log(this.activeIndex)
+                    var thisvideo=$('.swiper-wrapper').children().eq(this.activeIndex).find('video')
+                    var videowidth=thisvideo.width()
+                    var videoheight=thisvideo.height()
+                    if(videowidth>videoheight){
+                      thisvideo.css('width','100%')
+                    }else{
+                    }
+                    var src=[
+                    'image/test.mp4',
+                    'https://app.91jiabei.com/storage/videos/201907/13/qfjlliszhk2c2ba.mp4',
+                    'https://www.xunjianli.com/storage/videos/201911/25/efbzmgvzv5e8iqx.mp4',
+                    'https://app.91jiabei.com/storage/videos/201907/13/qfjlliszhk2c2ba.mp4'
+                    ]
+                    $('.swiper-wrapper').children().eq(this.activeIndex).find('video').attr("src",src[this.activeIndex])
+                    for(var i=0;i<all_video.length;i++){
+                      all_video[i].pause(); 
+                    }
+                     
+                }
+              },
+            });
+            plyr.setup();
+          </script>
+</body>
+</html>
